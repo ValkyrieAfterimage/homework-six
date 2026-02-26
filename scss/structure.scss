@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: $white-text-color;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+p,
+input,
+textarea {
+  font-family: Gill-Sans;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Proxima-Nova-ScOsf-Extra-Condensed-Italic-Thin;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: Proxima-Nova-ScOsf-Extra-Condensed-Italic-Thin;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: Gill-Sans-Italic;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Gill-Sans;
+  src: url(fonts/GillSans.ttf);
+}
+
+@font-face {
+  font-family: Gill-Sans-Italic;
+  src: url(fonts/GillSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: Gill-Sans-Light;
+  src: url(fonts/GillSans-Light.ttf);
+}
+
+@font-face {
+  font-family: Proxima-Nova-ScOsf-Extra-Condensed-Italic-Thin;
+  src: url(fonts/ProximaNovaExtraCondensed.ttf);
+  font-weight: bold;
+}
+
+.app {
+  min-height: 100vh;
+}

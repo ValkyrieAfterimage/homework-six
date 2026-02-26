@@ -1,0 +1,46 @@
+.about {
+  max-width: $nav-content-max-width;
+  margin: 0 auto;
+  padding: 193px 0 142px;
+
+  .element {
+    margin-bottom: 37px;
+  }
+
+  h1 {
+    width: fit-content;
+    letter-spacing: 6px;
+    border-bottom: solid 2px $black-text-color;
+  }
+
+  .about-desc {
+    margin-bottom: 101px;
+
+    p {
+      letter-spacing: 1.6px;
+      font-size: 16px;
+    }
+  }
+
+  h2 {
+    width: fit-content;
+    font-size: 40px;
+    letter-spacing: 4px;
+    border-bottom: solid 2px $black-text-color;
+  }
+
+  .miranda-brown {
+    background-image: url(../images/about-client-01.jpg);
+  }
+
+  .jonathan-wes {
+    background-image: url(../images/about-client-02.jpg);
+  }
+}
+
+@media (width <= ($nav-content-max-width + 40px)) {
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+.tours {
+  max-width: $nav-content-max-width;
+  margin: 0 auto;
+  padding: 142px 0 45px;
+
+  .hero {
+    height: 200px;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tours-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1 {
+      color: $white-text-color;
+      letter-spacing: 6px;
+      margin-bottom: 0;
+    }
+  }
+
+  .promos {
+    // background-color: red;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    gap: 55px;
+    grid-template-columns: repeat(auto-fill, $promo-box-width);
+
+    padding: 48px 80px;
+  }
+}

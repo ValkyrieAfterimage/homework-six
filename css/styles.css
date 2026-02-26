@@ -1,0 +1,793 @@
+.promo-box {
+  width: 236px;
+  height: 304px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.promo-box h1 {
+  margin-top: 47px;
+  margin-bottom: 0;
+}
+.promo-box h2 {
+  margin-top: 5px;
+  margin-bottom: 56px;
+}
+
+.israel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-01.jpg");
+}
+
+.usa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-02.jpg");
+}
+
+.australia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-03.jpg");
+}
+
+.new-zealand {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-04.jpg");
+}
+
+.france {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-05.jpg");
+}
+
+.egypt {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-06.jpg");
+}
+
+.japan {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-07.jpg");
+}
+
+.canada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-08.jpg");
+}
+
+.uae {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url("../images/tour/tour-09.jpg");
+}
+
+.client-quote {
+  max-width: 670px;
+  min-height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.client-quote .client-image {
+  width: 260px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+.client-quote .client-info {
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.client-quote .client-info .client-text p {
+  font-size: 16px;
+  font-family: Gill-Sans-Italic;
+  margin-bottom: 24px;
+  letter-spacing: 1.6px;
+}
+.client-quote .client-info .client-name {
+  font-size: 20px;
+  font-family: Proxima-Nova-ScOsf-Extra-Condensed-Italic-Thin;
+  text-align: right;
+  letter-spacing: 2px;
+  color: #79addc;
+}
+
+.button {
+  width: fit-content;
+  border-radius: 20px;
+  padding: 12px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #79addc;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Gill-Sans;
+}
+
+@media (width <= 710px) {
+  .client-quote {
+    flex-direction: column;
+  }
+  .client-quote .client-image {
+    margin: 0 auto;
+  }
+  .client-quote .client-info {
+    margin: 20px auto 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+p,
+input,
+textarea {
+  font-family: Gill-Sans;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Proxima-Nova-ScOsf-Extra-Condensed-Italic-Thin;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: Proxima-Nova-ScOsf-Extra-Condensed-Italic-Thin;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: Gill-Sans-Italic;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: Gill-Sans;
+  src: url(fonts/GillSans.ttf);
+}
+@font-face {
+  font-family: Gill-Sans-Italic;
+  src: url(fonts/GillSans-Italic.ttf);
+}
+@font-face {
+  font-family: Gill-Sans-Light;
+  src: url(fonts/GillSans-Light.ttf);
+}
+@font-face {
+  font-family: Proxima-Nova-ScOsf-Extra-Condensed-Italic-Thin;
+  src: url(fonts/ProximaNovaExtraCondensed.ttf);
+  font-weight: bold;
+}
+.app {
+  min-height: 100vh;
+}
+
+nav {
+  max-width: 980px;
+  height: 92px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+}
+nav .logo-icon {
+  width: 92px;
+  height: 42px;
+}
+nav .links {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav .links .link-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 22px;
+  padding: 0 20px;
+}
+nav .links .link-button a {
+  text-decoration: none;
+  font-family: Gill-Sans;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+nav .links .link-button + .link-button {
+  border-left: 1.5px solid #79addc;
+}
+
+.dark {
+  border-bottom: 2px solid #ffffff;
+}
+.dark #hamburger-icon .bar {
+  background-color: #fff;
+}
+.dark a .logo-icon {
+  background-image: url("../images/logo/logo-white.png");
+}
+.dark .links .link-button a {
+  color: #ffffff;
+}
+
+.light a .logo-icon {
+  background-image: url("../images/logo/logo-black.png");
+}
+.light #hamburger-icon .bar {
+  background-color: #000;
+}
+.light .links .link-button a {
+  color: #000000;
+}
+.light {
+  border-bottom: 2px solid #000000;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+#hamburger-icon .bar {
+  width: 35px;
+  height: 3px;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.mobile {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: 0.4s;
+  height: 100vh;
+  width: calc(100% - 80px);
+  padding: 0 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.mobile .mobile-logo {
+  height: 92px;
+  border-bottom: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+.mobile .mobile-logo .logo-icon {
+  background-image: url(../images/logo/logo-black.png) !important;
+  background-repeat: no-repeat;
+}
+.mobile .mobile-links {
+  padding: 20px 0;
+}
+.mobile .mobile-links .link-button {
+  margin-bottom: 20px;
+}
+.mobile .mobile-links .link-button a {
+  color: #000000;
+  text-decoration: none;
+  font-family: Gill-Sans;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.cover {
+  visibility: hidden;
+  opacity: 0%;
+  transition: 0.2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+}
+
+body.open {
+  overflow: hidden;
+}
+body.open nav #hamburger-icon .bar {
+  background-color: #fff;
+}
+body.open nav #hamburger-icon .top {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+body.open nav #hamburger-icon .middle {
+  opacity: 0;
+}
+body.open nav #hamburger-icon .bottom {
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+body.open nav .mobile {
+  visibility: visible;
+  left: -20px;
+}
+body.open nav .cover {
+  visibility: visible;
+  opacity: 100%;
+}
+
+@media (width <= 1020px) {
+  nav {
+    margin: 0 20px;
+  }
+  nav .links {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+}
+@media (width >= 980px) {
+  .mobile {
+    visibility: hidden;
+  }
+}
+footer a .logo-icon {
+  width: 92px;
+  height: 42px;
+  background-image: url("../images/logo/logo-white.png");
+}
+footer {
+  height: 100px;
+  padding: 0 150px;
+  background-color: #79addc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer p {
+  font-size: 12px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+footer .socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .socials i {
+  color: white;
+  height: 23px;
+  width: 23px;
+  font-size: 25px;
+}
+footer .socials i:not(:last-child) {
+  margin-right: 22px;
+}
+
+@media (width <= 785px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+  }
+  footer * {
+    margin: 20px 0;
+  }
+}
+.home .hero {
+  height: 500px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/hero.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.home .hero .callout {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.home .hero .callout h1 {
+  margin-top: 172px;
+}
+.home .hero .callout h3 {
+  margin: 26px 32px 0 32px;
+  width: auto;
+  max-width: 416px;
+}
+.home .hero .callout .weird {
+  margin: 50px auto;
+  border-radius: 0;
+}
+.home .home-content {
+  max-width: 818px;
+  margin: -43px auto 0 auto;
+}
+.home .home-content .promos {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+}
+.home .home-content .booking-form-holder h1 {
+  height: 73px;
+  margin-top: 50px;
+  margin-bottom: 28px;
+  white-space: nowrap;
+}
+.home .home-content .booking-form-holder p {
+  font-family: Gill-Sans-Light;
+  margin-bottom: 0;
+}
+.home .home-content .booking-form-holder input,
+.home .home-content .booking-form-holder textarea {
+  font-family: Gill-Sans-Light;
+  border: 1px solid #79addc;
+}
+.home .home-content .booking-form-holder input::placeholder,
+.home .home-content .booking-form-holder textarea::placeholder {
+  color: #000000;
+}
+.home .home-content .booking-form-holder input {
+  height: 58px;
+  padding: 0 20px;
+}
+.home .home-content .booking-form-holder .input-section {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .home-content .booking-form-holder .input-section .label {
+  width: 110px;
+}
+.home .home-content .booking-form-holder .two-col input {
+  width: 100%;
+}
+.home .home-content .booking-form-holder .two-col .left-col {
+  width: 75%;
+  margin-right: 21px;
+}
+.home .home-content .booking-form-holder .calendar input {
+  width: 100%;
+  margin-left: 0px;
+}
+.home .home-content .booking-form-holder .calendar p {
+  width: 110px;
+}
+.home .home-content .booking-form-holder .calendar .cal-icon {
+  position: absolute;
+  font-size: 20px;
+  top: 19px;
+  right: 16px;
+}
+.home .home-content .booking-form-holder .drop-down {
+  flex-wrap: wrap;
+}
+.home .home-content .booking-form-holder .drop-down p {
+  width: 110px;
+}
+.home .home-content .booking-form-holder .drop-down input {
+  width: 103px;
+}
+.home .home-content .booking-form-holder .drop-down .drop-down-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+}
+.home .home-content .booking-form-holder .drop-down .drop-down-item .arrow {
+  position: absolute;
+  font-size: 20px;
+  right: 16px;
+}
+.home .home-content .booking-form-holder .multi-line textarea {
+  width: 100%;
+  height: 192px;
+  resize: none;
+  padding: 20px;
+}
+.home .home-content .booking-form-holder .button {
+  height: 61px;
+  border-radius: 30px;
+  margin-top: 37px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #79addc;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Gill-Sans;
+}
+
+@media (width <= 858px) {
+  .home .home-content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .home .home-content .promos {
+    flex-direction: column;
+  }
+  .home .home-content .promos .promo-box:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (width <= 785px) {
+  .home .home-content .booking-form-holder .drop-down {
+    margin-top: 0;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .home .home-content .booking-form-holder .drop-down .drop-down-item {
+    margin-top: 20px;
+  }
+}
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 193px 0 142px;
+}
+.about .element {
+  margin-bottom: 37px;
+}
+.about h1 {
+  width: fit-content;
+  letter-spacing: 6px;
+  border-bottom: solid 2px #000000;
+}
+.about .about-desc {
+  margin-bottom: 101px;
+}
+.about .about-desc p {
+  letter-spacing: 1.6px;
+  font-size: 16px;
+}
+.about h2 {
+  width: fit-content;
+  font-size: 40px;
+  letter-spacing: 4px;
+  border-bottom: solid 2px #000000;
+}
+.about .miranda-brown {
+  background-image: url(../images/about-client-01.jpg);
+}
+.about .jonathan-wes {
+  background-image: url(../images/about-client-02.jpg);
+}
+
+@media (width <= 1020px) {
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.tours {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 142px 0 45px;
+}
+.tours .hero {
+  height: 200px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tours-header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.tours .hero h1 {
+  color: #ffffff;
+  letter-spacing: 6px;
+  margin-bottom: 0;
+}
+.tours .promos {
+  align-items: center;
+  justify-content: space-around;
+  display: grid;
+  gap: 55px;
+  grid-template-columns: repeat(auto-fill, 236px);
+  padding: 48px 80px;
+}
+
+.tour-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 142px 0 100px;
+}
+.tour-page .hero {
+  position: relative;
+  height: 413px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+.tour-page .hero h1 {
+  font-size: 80px;
+  color: #ffffff;
+  margin: 0;
+}
+.tour-page .hero h2 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #ffffff;
+  margin: 0;
+}
+.tour-page .tour-images {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tour-page .tour-images .tour-image {
+  width: 298px;
+  height: 347px;
+  margin-bottom: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tour-page .tour-body h1 {
+  width: fit-content;
+  letter-spacing: 6px;
+  border-bottom: solid 2px #000000;
+  margin-bottom: 35px;
+}
+.tour-page .tour-body p {
+  letter-spacing: 1.6px;
+  font-size: 16px;
+  margin-bottom: 80px;
+}
+.tour-page .button {
+  margin: 0 auto;
+}
+
+.israel-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-01.jpg);
+}
+.israel-tour .one {
+  background-image: url(../images/tour/tour-israel/israel-tour-01.jpg);
+}
+.israel-tour .two {
+  background-image: url(../images/tour/tour-israel/israel-tour-02.jpg);
+}
+.israel-tour .three {
+  background-image: url(../images/tour/tour-israel/israel-tour-03.jpg);
+}
+
+.usa-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-02.jpg);
+}
+.usa-tour .one {
+  background-image: url(../images/tour/tour-usa/usa-tour-01.jpg);
+}
+.usa-tour .two {
+  background-image: url(../images/tour/tour-usa/usa-tour-02.jpg);
+}
+.usa-tour .three {
+  background-image: url(../images/tour/tour-usa/usa-tour-03.jpg);
+}
+
+.australia-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-03.jpg);
+}
+.australia-tour .one {
+  background-image: url(../images/tour/tour-aus/aus-tour-01.jpg);
+}
+.australia-tour .two {
+  background-image: url(../images/tour/tour-aus/aus-tour-02.jpg);
+}
+.australia-tour .three {
+  background-image: url(../images/tour/tour-aus/aus-tour-03.jpg);
+}
+
+.new-zealand-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-04.jpg);
+}
+.new-zealand-tour .one {
+  background-image: url(../images/tour/tour-nz/nz-tour-01.jpg);
+}
+.new-zealand-tour .two {
+  background-image: url(../images/tour/tour-nz/nz-tour-02.jpg);
+}
+.new-zealand-tour .three {
+  background-image: url(../images/tour/tour-nz/nz-tour-03.jpg);
+}
+
+.france-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-05.jpg);
+}
+.france-tour .one {
+  background-image: url(../images/tour/tour-france/france-tour-01.jpg);
+}
+.france-tour .two {
+  background-image: url(../images/tour/tour-france/france-tour-02.jpg);
+}
+.france-tour .three {
+  background-image: url(../images/tour/tour-france/france-tour-03.jpg);
+}
+
+.egypt-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-06.jpg);
+}
+.egypt-tour .one {
+  background-image: url(../images/tour/tour-egypt/egypt-tour-01.jpg);
+}
+.egypt-tour .two {
+  background-image: url(../images/tour/tour-egypt/egypt-tour-02.jpg);
+}
+.egypt-tour .three {
+  background-image: url(../images/tour/tour-egypt/egypt-tour-03.jpg);
+}
+
+.japan-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-07.jpg);
+}
+.japan-tour .one {
+  background-image: url(../images/tour/tour-japan/japan-tour-01.jpg);
+}
+.japan-tour .two {
+  background-image: url(../images/tour/tour-japan/japan-tour-02.jpg);
+}
+.japan-tour .three {
+  background-image: url(../images/tour/tour-japan/japan-tour-03.jpg);
+}
+
+.canada-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-08.jpg);
+}
+.canada-tour .one {
+  background-image: url(../images/tour/tour-canada/canada-tour-01.jpg);
+}
+.canada-tour .two {
+  background-image: url(../images/tour/tour-canada/canada-tour-02.jpg);
+}
+.canada-tour .three {
+  background-image: url(../images/tour/tour-canada/canada-tour-03.jpg);
+}
+
+.uae-tour .hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/tour/tour-09.jpg);
+}
+.uae-tour .one {
+  background-image: url(../images/tour/tour-uae/uae-tour-01.jpg);
+}
+.uae-tour .two {
+  background-image: url(../images/tour/tour-uae/uae-tour-02.jpg);
+}
+.uae-tour .three {
+  background-image: url(../images/tour/tour-uae/uae-tour-03.jpg);
+}
+
+@media (width <= 1020px) {
+  .tour-page .tour-images {
+    flex-direction: column;
+  }
+  .tour-page .tour-body {
+    padding: 0 20px;
+  }
+}
